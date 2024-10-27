@@ -1,0 +1,94 @@
+body,
+header {
+  margin: 0;
+  background-color: rgb(37, 37, 37);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  height: 2000px;
+}
+p {
+  color: white;
+}
+.header-line {
+  height: 50px;
+  background-color: rgb(30, 126, 129);
+}
+.header-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  height: 100%;
+}
+.header-content a {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 7px 10px;
+  transition: transform 0.5s;
+}
+.header-content a:hover {
+  background-color: rgb(0, 0, 0);
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+  background: linear-gradient(60deg, rgb(0, 130, 133), rgb(0, 0, 0));
+}
+.navigator {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  width: 200px;
+  height: 212px;
+}
+.navigator-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.navigator-text {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  text-align: right;
+  padding-right: 20px;
+}
+.navigator-text p {
+  color: rgb(30, 126, 129);
+  font-weight: bold;
+}
+.navigator-icons {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 25%;
+  margin-top: 10px;
+  gap: 25px;
+  align-self: flex-end;
+}
+.navigator-icons a {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 5px solid rgb(30, 126, 129);
+  align-self: flex-end;
+  transition: transform 0.5s;
+}
+.navigator-icons a:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+}
+
+@media (max-width: 800px) {
+  .header-content {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 550px) {
+  .navigator {
+    display: none;
+  }
+}

@@ -5,8 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
+  <header>
+    <div class="header-line">
+      <div class="header-content">
+        <a href=""><span>About</span></a>
+        <a href=""><span>Projects</span></a>
+        <a href=""><span>Contact</span></a>
+      </div>
+    </div>
+  </header>
   <body>
-    <h1>Just a test page</h1>
+    <div class="navigator">
+      <div class="navigator-container">
+        <div class="navigator-text">
+          <p id="about">About</p>
+          <p id="projects">Projects</p>
+          <p id="contact">Contact</p>
+          <p id="other">Projects</p>
+        </div>
+        <div class="navigator-icons">
+          <a
+            href=""
+            onmouseover="onHover('about')"
+            onmouseleave="offHover('about')"
+          ></a>
+          <a
+            href=""
+            onmouseover="onHover('projects')"
+            onmouseleave="offHover('projects')"
+          ></a>
+          <a
+            href=""
+            onmouseover="onHover('contact')"
+            onmouseleave="offHover('contact')"
+          ></a>
+          <a
+            href=""
+            onmouseover="onHover('other')"
+            onmouseleave="offHover('other')"
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-container">
+        <p>hello</p>
+      </div>
+    </div>
   </body>
 </html>
