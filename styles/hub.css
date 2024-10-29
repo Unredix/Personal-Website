@@ -1,0 +1,78 @@
+body,
+header {
+  margin: 0;
+  background-color: rgb(37, 37, 37);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  height: 2000px;
+}
+.header-line {
+  height: 50px;
+  background-color: rgb(30, 126, 129);
+}
+.header-content {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  height: 100%;
+}
+.header-content a {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.header-content a:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+}
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(30, 126, 129);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(30, 126, 129);
+}
+.project:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+.project-text {
+  width: 400px;
+  text-align: center;
+}
+.project-img {
+  width: 350px;
+}
+
+.project-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 1870px) {
+  .project {
+    transform: scale(0.95);
+    transition: scale 0.5s;
+  }
+
+  .project:hover {
+    transform: scale(1.02);
+  }
+  .projects-container {
+    gap: 1px;
+    flex-wrap: wrap;
+  }
+}
