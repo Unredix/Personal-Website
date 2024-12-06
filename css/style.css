@@ -46,6 +46,10 @@ body {
 .social-icons img {
   width: 50px;
   margin: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.social-icons img:hover {
+  transform: scale(1.2);
 }
 .about-me {
   text-align: left;
