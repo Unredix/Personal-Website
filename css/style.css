@@ -29,7 +29,12 @@ body {
   font-size: 1.9em;
   font-family: cursive;
 }
-
+.title span {
+  color: transparent;
+  background: linear-gradient(90deg, #00d2ff 0%, #979ff3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 .pfp-img {
   width: 100%;
 }
@@ -59,7 +64,10 @@ body {
   font-family: cursive;
 }
 .about-me span {
-  color: #62c9e9;
+  color: transparent;
+  background: linear-gradient(90deg, #00d2ff 0%, #979ff3 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 @media screen and (max-width: 600px) {
