@@ -57,7 +57,7 @@ body {
   transform: scale(1.2);
 }
 .about-me {
-  text-align: left;
+  text-align: center;
   margin: 20px;
   color: #fff;
   font-size: 1.5em;
